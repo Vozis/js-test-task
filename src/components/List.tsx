@@ -16,7 +16,7 @@ const List: FC<IListProps> = ({ items }) => {
             listStyleType: 'none',
           }}
         >
-          <Item item={item} hasChildren={item.children.length ? true : false} />
+          <Item item={item} hasChildren={!!item.children.length} />
         </ul>
       ))}
     </>
